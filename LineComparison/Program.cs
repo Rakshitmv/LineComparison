@@ -13,16 +13,20 @@ namespace LineComparison
             Console.WriteLine("--------Welcome to Line Comparison Program---------\n");
             Comparison line1 = new Comparison(1, 2, 3, 4);
             Comparison line2 = new Comparison(5, 6, 3, 4);
-            if (line1.CalculateLineEqual() == line2.CalculateLineEqual())
+            if (line1.Calculate() > line2.Calculate())
             {
-                Console.WriteLine("Both Lines Are Equal\n");
+                Console.WriteLine("Length of line1 is greater than line2\n");
             }
-            else
+            if (line1.Calculate() < line2.Calculate())
             {
-                Console.WriteLine("Lines Are Not Equal\n");
+                Console.WriteLine("Length of line1 is Samller than line2\n");
+            }
+            if (line1.Calculate() == line2.Calculate())
+            {
+                Console.WriteLine("Both lines are Equal\n");
+
             }
             Console.ReadLine();
-
         }
     }
 }
