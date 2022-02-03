@@ -11,8 +11,8 @@ namespace LineComparison
         static void Main(string[] args)
         {
             Console.WriteLine("--------Welcome to Line Comparison Program---------\n");
-            Comparison line1 = new Comparison(1, 2, 3, 4);
-            Comparison line2 = new Comparison(5, 6, 3, 4);
+            Comparison line1 = new Comparison(1, 7, 3, 4);
+            Comparison line2 = new Comparison(5, 9, 3, 4);
             if (line1.Calculate() > line2.Calculate())
             {
                 Console.WriteLine("Length of line1 is greater than line2\n");
